@@ -13,3 +13,5 @@ C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Service\obj\Debu
 C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Service\obj\Debug\net6.0\refint\BookStore.Service.dll
 C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Service\obj\Debug\net6.0\BookStore.Service.pdb
 C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Service\obj\Debug\net6.0\ref\BookStore.Service.dll
+C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Service\bin\Debug\net6.0\BookStore.Repository.dll
+C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Service\bin\Debug\net6.0\BookStore.Repository.pdb
