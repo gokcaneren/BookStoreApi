@@ -13,11 +13,13 @@ namespace BookStore.Api.Controllers
     public class BookController : ControllerBase
     {
         private readonly IService<Book> _service;
+        private readonly IBookService _bookService;
         private readonly IMapper _mapper;
-        public BookController(IService<Book> service, IMapper mapper)
+        public BookController(IService<Book> service, IMapper mapper, IBookService bookService)
         {
             _service = service;
             _mapper = mapper;
+            _bookService = bookService;
         }
 
         [HttpGet("{id}")]
@@ -34,6 +36,12 @@ namespace BookStore.Api.Controllers
             var books = await _service.GetAllAsync();
             var booksDto= _mapper.Map<List<BookResponsDto>>(books.ToList());
             return Ok(booksDto);
+        }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> BooksWithCategory()
+        {
+            return Ok(await _bookService.GetBooksWithCategory());
         }
         
         [HttpPost]
