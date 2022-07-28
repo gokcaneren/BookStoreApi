@@ -26,5 +26,13 @@ namespace BookStore.Api.Controllers
             var bookDto = _mapper.Map<BookResponsDto>(book);
             return Ok(bookDto);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var books = await _service.GetAllAsync();
+            var booksDto= _mapper.Map<List<BookResponsDto>>(books.ToList());
+            return Ok(booksDto);
+        }
     }
 }
