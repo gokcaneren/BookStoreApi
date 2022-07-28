@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BookStore.Core.DTOs.Requests;
 using BookStore.Core.DTOs.Respons;
 using BookStore.Core.Models;
 using BookStore.Core.Services;
@@ -33,6 +34,30 @@ namespace BookStore.Api.Controllers
             var books = await _service.GetAllAsync();
             var booksDto= _mapper.Map<List<BookResponsDto>>(books.ToList());
             return Ok(booksDto);
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> Save(AddBookRequest request)
+        {
+            var book = _mapper.Map<Book>(request);
+            await _service.AddAsync(book);
+            return Ok();
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update(UpdateBookRequest request)
+        {
+            var book= _mapper.Map<Book>(request);
+            await _service.UpdateAsync(book);
+            return Ok(book);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Remove(int id)
+        {
+            var book = await _service.GetByIdAsync(id);
+            await _service.RemoveAsync(book);
+            return NoContent();
         }
     }
 }

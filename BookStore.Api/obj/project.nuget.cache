@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "df7SiyFigzgXadTfJ8kOOC1IEuxI7Ja+v2A56EZuR61eh5PwPzi3rOejsD2b/i47oC2eDtmw/IkOHqufoHZrnQ==",
+  "dgSpecHash": "3Ggy+/NG1Sp+KDpuezzgWp8VhYla1coUllKIoBimkQdIv2YfYLRXPbMQCIHpc9UDjxo0/1ZHbRhL5QrzCFywWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gok\\Desktop\\c# console proje\\BookStoreApiApp\\BookStore.Api\\BookStore.Api.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\Gok\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\azure.core\\1.20.0\\azure.core.1.20.0.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",
+    "C:\\Users\\Gok\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
+    "C:\\Users\\Gok\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.1.2\\fluentvalidation.aspnetcore.11.1.2.nupkg.sha512",
+    "C:\\Users\\Gok\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
