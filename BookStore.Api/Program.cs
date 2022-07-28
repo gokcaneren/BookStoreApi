@@ -1,4 +1,11 @@
+using BookStore.Core.Repositories;
+using BookStore.Core.Services;
+using BookStore.Core.UnitOfWorks;
 using BookStore.Repository;
+using BookStore.Repository.Repositories;
+using BookStore.Repository.UnitOfWorks;
+using BookStore.Service.Mapping;
+using BookStore.Service.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -10,6 +17,14 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddAutoMapper(typeof(MapProfile));
 
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {

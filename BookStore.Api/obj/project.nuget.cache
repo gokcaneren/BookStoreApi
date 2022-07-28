@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "XaSCkCSZ+kwYLOICzjz5jjT9ZFYv1+bIffSdq3kGQKl9NIojPp+R4+KVqbSPb4nTkoiqW35LWg8+ZUQA8X5CtQ==",
+  "dgSpecHash": "df7SiyFigzgXadTfJ8kOOC1IEuxI7Ja+v2A56EZuR61eh5PwPzi3rOejsD2b/i47oC2eDtmw/IkOHqufoHZrnQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gok\\Desktop\\c# console proje\\BookStoreApiApp\\BookStore.Api\\BookStore.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Gok\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Gok\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\azure.core\\1.20.0\\azure.core.1.20.0.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\azure.identity\\1.5.0\\azure.identity.1.5.0.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
-    "C:\\Users\\Gok\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Gok\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.0-preview2.22096.2\\microsoft.data.sqlclient.5.0.0-preview2.22096.2.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.0-preview2.22084.1\\microsoft.data.sqlclient.sni.runtime.5.0.0-preview2.22084.1.nupkg.sha512",
     "C:\\Users\\Gok\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0-preview.6.22329.4\\microsoft.entityframeworkcore.7.0.0-preview.6.22329.4.nupkg.sha512",

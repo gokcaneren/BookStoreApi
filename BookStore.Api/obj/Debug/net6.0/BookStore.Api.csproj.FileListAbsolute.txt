@@ -78,3 +78,7 @@ C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\ne
 C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\Mono.TextTemplating.dll
 C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\BookStore.Service.dll
+C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\BookStore.Service.pdb
