@@ -18,6 +18,7 @@ namespace BookStore.Service.Mapping
             CreateMap<Category, CategoryResponsDto>();
             CreateMap<AddBookRequest, Book>();
             CreateMap<UpdateBookRequest, Book>();
+            CreateMap<Book, BooksWithCategoryDto>();
         }
     }
 }
