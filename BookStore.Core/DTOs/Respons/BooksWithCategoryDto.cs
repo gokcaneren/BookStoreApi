@@ -8,6 +8,6 @@ namespace BookStore.Core.DTOs.Respons
 {
     public class BooksWithCategoryDto:BookResponsDto
     {
-        public CategoryResponsDto CategoryRespons { get; set; }
+        public CategoryResponsDto Categories { get; set; }
     }
 }

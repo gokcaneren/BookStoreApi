@@ -1,11 +1,6 @@
 ﻿using BookStore.Core.Models;
 using BookStore.Core.Repositories;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookStore.Repository.Repositories
 {
@@ -17,7 +12,7 @@ namespace BookStore.Repository.Repositories
 
         public async Task<List<Book>> GetBooksWithCategory()
         {
-            return await _context.Books.Include(x=>x.Category).ToListAsync();
+            return await _context.Books.Include(x => x.Category).ToListAsync();
         }
     }
 }

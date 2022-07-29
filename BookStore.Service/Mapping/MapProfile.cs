@@ -14,11 +14,12 @@ namespace BookStore.Service.Mapping
     {
         public MapProfile()
         {
-            CreateMap<Book, BookResponsDto>();
-            CreateMap<Category, CategoryResponsDto>();
+            CreateMap<Book, BookResponsDto>().ReverseMap();
+            CreateMap<Category, CategoryResponsDto>().ReverseMap();
             CreateMap<AddBookRequest, Book>();
             CreateMap<UpdateBookRequest, Book>();
-            CreateMap<Book, BooksWithCategoryDto>();
+            CreateMap<Book, BooksWithCategoryDto>()
+                .ForPath(x=>x.Categories, o=>o.MapFrom(dto=>dto.Category));
         }
     }
 }
