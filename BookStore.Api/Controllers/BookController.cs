@@ -60,6 +60,7 @@ namespace BookStore.Api.Controllers
             return Ok(book);
         }
 
+        [ServiceFilter(typeof(NotFoundFilter<Book>))]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Remove(int id)
         {
