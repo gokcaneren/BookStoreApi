@@ -20,6 +20,7 @@ namespace BookStore.Service.Mapping
             CreateMap<UpdateBookRequest, Book>();
             CreateMap<Book, BooksWithCategoryDto>()
                 .ForPath(x=>x.Categories, o=>o.MapFrom(dto=>dto.Category));
+            CreateMap<Category, CategoryWithBooksDto>();
         }
     }
 }
