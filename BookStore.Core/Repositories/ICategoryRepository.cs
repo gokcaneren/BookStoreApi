@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Core.Repositories
 {
-    public interface ICategoryDto:IGenericRepository<ICategoryDto>
+    public interface ICategoryRepository:IGenericRepository<Category>
     {
         Task<Category> GetCategoryWithBooks(int categoryId);
     }
