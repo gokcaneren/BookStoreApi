@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BookStore.Api.Filters;
 using BookStore.Core.DTOs.Requests;
 using BookStore.Core.DTOs.Respons;
 using BookStore.Core.Models;
@@ -20,6 +21,7 @@ namespace BookStore.Api.Controllers
             _service = service;
         }
 
+        [ServiceFilter(typeof(NotFoundFilter<Book>))]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {

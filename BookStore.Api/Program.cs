@@ -1,3 +1,4 @@
+using BookStore.Api.Filters;
 using BookStore.Core.Repositories;
 using BookStore.Core.Services;
 using BookStore.Core.UnitOfWorks;
@@ -19,6 +20,8 @@ builder.Services.AddControllers().AddFluentValidation(x=>x.RegisterValidatorsFro
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped(typeof(NotFoundFilter<>));
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IBookRepository, BookRepository>();
