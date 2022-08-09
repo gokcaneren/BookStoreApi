@@ -1,5 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BookStore.Api.Models;
+using BookStore.Core.Services;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace BookStore.Api.Controllers
 {
@@ -7,5 +12,46 @@ namespace BookStore.Api.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly IUserService _service;
+
+        public UserController(IUserService service)
+        {
+            _service = service;
+        }
+
+        [HttpPost]
+        public IActionResult Login(UserLoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = _service.ValidateUser(model.UserName, model.Password);
+                if (user != null)
+                {
+                    var claims = new[]
+                    {
+                        new Claim(JwtRegisteredClaimNames.UniqueName, user.UserName),
+                        new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                        new Claim(ClaimTypes.Role, user.Role)
+                    };
+
+                    var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("sdasldlawlalwdldal@321"));
+                    var signinCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);
+
+                    var token = new JwtSecurityToken(
+                        issuer: "goky.com",
+                        audience: "client.goky.com",
+                        claims: claims,
+                        notBefore: DateTime.Now,
+                        expires: DateTime.Now.AddMinutes(5),
+                        signingCredentials: signinCredentials
+                        );
+
+                    return Ok(new {token=new JwtSecurityTokenHandler().WriteToken(token)});
+                }
+
+                return Unauthorized();
+            }
+            return BadRequest(ModelState);
+        }
     }
 }

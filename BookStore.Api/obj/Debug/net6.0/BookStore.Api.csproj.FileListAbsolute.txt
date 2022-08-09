@@ -85,3 +85,5 @@ C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\ne
 C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Gok\Desktop\c# console proje\BookStoreApiApp\BookStore.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
