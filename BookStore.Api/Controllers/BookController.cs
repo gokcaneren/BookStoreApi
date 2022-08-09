@@ -4,6 +4,7 @@ using BookStore.Core.DTOs.Requests;
 using BookStore.Core.DTOs.Respons;
 using BookStore.Core.Models;
 using BookStore.Core.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -31,6 +32,7 @@ namespace BookStore.Api.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles ="admin")]
         public async Task<IActionResult> GetAll()
         {
             var books = await _service.GetAllAsync();
